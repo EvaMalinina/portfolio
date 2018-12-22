@@ -1,16 +1,63 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Portfolio | Обо мне</title>
+    <title>Portfolio | About me</title>
     <link rel="stylesheet" href="main.min.css">
   </head>
   <body>
     <div class="wrapper">
+      <header class="header"><img class="welcome" src="./assets/images/welcome-bg.jpg" alt="about welcome"/>
+        <div class="header__top">
+          <ul class="socials__white">
+            <li class="socials__item"><a class="socials__link" href="#">
+                <svg class="social__icon">
+                  <use xlink:href="./assets/images/icons/sprite.svg#vk"></use>
+                </svg></a></li>
+            <li class="socials__item"><a class="socials__link" href="#">
+                <svg class="social__icon">
+                  <use xlink:href="./assets/images/icons/sprite.svg#github"></use>
+                </svg></a></li>
+            <li class="socials__item"><a class="socials__link" href="#">
+                <svg class="social__icon">
+                  <use xlink:href="./assets/images/icons/sprite.svg#in"></use>
+                </svg></a></li>
+          </ul><a class="hamburger" href="#" id="hamburger"><span class="hamburger__span"></span><span class="hamburger__span deleted"></span><span class="hamburger__span"></span></a>
+        </div>
+        <div class="user-card">
+          <div class="user-card__outer">
+            <svg class="user-card__svg">
+              <use xlink:href="./assets/images/sprite.svg#login"></use>
+            </svg>
+          </div>
+          <div class="user__pic-container">
+            <div class="user__pic"><img class="user__pic-img" src="./assets/images/myphoto.jpg" alt="user pic"/>
+            </div>
+          </div>
+          <div class="user__info">
+            <h1 class="user__name ">Tetiana Dotsenko</h1>
+            <div class="user__desc">Website of developer</div>
+          </div>
+        </div>
+        <div class="header__button-container">
+          <div class="header__button">
+            <svg class="header__arrow">
+              <use xlink:href="./assets/images/icons/sprite.svg#arrow_down"></use>
+            </svg>
+          </div>
+        </div>
+      </header>
       <div class="maincontent">
-        <h1>Страничка "Обо Мне" 11111  </h1>
+        <div class="about__triangles">
+          <svg class="triangle" fill="#f8f9f5" viewbox="0 0 900 150" preserveAspectRatio="none">
+            <polygon points="0,0 0,150 900,150"></polygon>
+          </svg>
+          <svg class="triangle" fill="#f8f9f5" viewbox="0 0 900 150" preserveAspectRatio="none">
+            <polygon points="0,150 900,150 900,0"></polygon>
+          </svg>
+        </div>
       </div>
       <footer class="footer">
         <h2>Copyright &copy;</h2>

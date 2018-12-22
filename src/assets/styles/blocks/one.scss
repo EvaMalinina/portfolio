@@ -7,7 +7,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background: url('./assets/images/welcome-bg.jpg') no-repeat;
+  background-repeat:  no-repeat;
   background-size: cover;
 }
 .welcome__log-in {
@@ -89,17 +89,17 @@
 .user__socials {
   margin-bottom: 23px;
 }
-.socials {
+.socials, .socials__white {
   display: flex;
   width: 140px;
   justify-content: space-between;
 }
-.social__item {
+.socials__item {
   display: flex;
   align-items: flex-end;
   
 }
-.social__link {
+.socials__link {
   display: flex;
   align-items: flex-end;
   width: 35px;
@@ -111,7 +111,17 @@
   fill: #70d1c6;
 
   &:hover {
-    fill: #00bfa5;
+    fill: white;
+  }
+}
+.socials__white {
+  
+  .social__icon{
+    fill: #c3d6d6;
+
+    &:hover {
+      fill: white;
+    }
   }
 }
 .user__nav {

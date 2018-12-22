@@ -1,10 +1,20 @@
 extends ../main.layout.pug
 
 block variables
-  - var title = 'Обо мне'
+  - var title = 'About me'
 
 block scripts
   script(src='about.bundle.js')
 
 block content
-  h1 Страничка "Обо Мне" 11111  
+  .about__triangles
+    svg(fill="#f8f9f5", viewbox="0 0 900 150", class="triangle", preserveAspectRatio="none")
+      polygon(points="0,0 0,150 900,150")
+    svg(fill="#f8f9f5", viewbox="0 0 900 150", class="triangle", preserveAspectRatio="none")
+      polygon(points="0,150 900,150 900,0")
+
+
+
+
+
+  

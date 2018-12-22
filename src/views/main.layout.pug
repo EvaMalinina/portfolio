@@ -2,7 +2,7 @@ include ./common/_mixins
 block variables
 
 doctype html
-html(lang="ru")
+html(lang="en")
   head
     meta(charset="utf-8")
     meta(content="ie=edge" http-equiv="x-ua-compatible")
@@ -12,6 +12,7 @@ html(lang="ru")
     link(rel='stylesheet' href='main.min.css')
   body
     .wrapper
+      include ./common/header.pug
       .maincontent
         block content
 
