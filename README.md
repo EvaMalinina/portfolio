@@ -1,7 +1,7 @@
 
 
 > Перед установкой зависимостей и запуском проекта убедитесь, что у вас установлена [последняя версия Node.js & NPM](https://nodejs.org/en/download/current/)
-
+ru
 ##  Чтобы развернуть проект необходимо:
 ```sh
 $ git clone git@github.com:loftschool/advanced-boilerplate.git
