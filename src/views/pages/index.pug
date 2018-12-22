@@ -1,13 +1,40 @@
 extends ../auth.layout.pug
 
 block content
-  .hello-world
-    +icon('portfolio_header', 'hello-world__block')
-<<<<<<< HEAD
-    .inlined-svg
+  .welcome
+    .welcome__log-in
+      button.button Log in
+    .welcome__content-container
+      .welcome__content
+        +image('profile-bg.png', 'page welcome', 'welcome-img')
+        .welcome__user-desc
+          .user
+            .user__pic-container
+              .user__pic
+                +image('myphoto.jpg', 'user pic', 'user__pic-img')
+            .user__info
+              .user__name Tetiana Dotsenko
+              .user__desc Website of developer
+            .user__socials
+              ul.socials
+                each social in ['vk', 'github', 'in']
+                  li.social__item
+                    a(href='#').social__link
+                      +icon(social, 'social__icon')
+            .user__nav
+              mixin nav(className, items)
+                nav(class = `${className}`)
+                  .nav-container
+                    ul(class = `${className}__list`)
+                      each item in items
+                        li(class = `${className}__item`)
+                          a(class = `${className}__link` href='#')= item
+              +nav('nav', ['Projects', 'About me', 'Blog'])
+    .welcome__text-container
+      .welcome__text
+        .welcome__words © Tetiana Dotsenko | Created with love in Loftschool | 2019
+  //- .hello-world
+  //-   +icon('portfolio_header', 'hello-world__block')
+  //-   .inlined-svg
 
-  .block1 fffffff
-  .block2 222222
-=======
-    .inlined-svg
->>>>>>> d987ac819b790d34ba2b00e70c39b2868932f289
+  
