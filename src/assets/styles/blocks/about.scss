@@ -8,3 +8,125 @@
   height: 150px;
   width: 50%;
 }
+.about__col--bg-white {
+  background: #efeee9;
+  display: flex;
+  width: 50%;
+}
+.about__left-title {
+  z-index: 3;
+}
+.title {
+  // position: absolute;
+  // top: 20%;
+  // left: 50%;
+  // transform: translateX(50%);
+  font-family: 'bernier';
+  font-size: 63px;
+  font-weight: 300;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.header__about {
+  fill: #e6e5e0;
+  width: 360px;
+  z-index: -1;
+  margin-top: -125px;
+  
+}
+.about__content {
+  display: flex;
+  justify-content: center;
+}
+.about__col--bg-beige {
+  background: #eeebdf;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.about__user-info {
+  display: flex;
+  flex-direction: column;
+}
+.user-info__avatar {
+  width: 450px;
+  height: 400px;
+  margin-bottom: 30px;
+}
+.myphoto {
+  max-width: 100%;
+  background-repeat: no-repeat;
+  max-height: 100%;
+  background-size: contain;
+}
+.user-info__tite {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.subtitle {
+  font-family: 'bernier';
+  font-size: 35px;
+  font-weight: 300;
+}
+.text-block {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+.about__right-title {
+  justify-content: space-around;
+  display: flex;
+}
+.about__right-info {
+  padding-left: 45px;
+}
+.about__desc-text {
+  margin-bottom: 50px;
+}
+#map {
+  height: 100%;
+  width: 100%;
+}
+.map {
+  position: relative;
+}
+.map__content {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  background: url('./assets/images/contacts-bg.png' );
+  background-repeat: no-repeat;
+  width: 380px;
+  background-size: cover;
+  padding: 35px 35px 0;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+.contacts__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.contacts__item { 
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+.contact__icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.contacts__marker {
+  width: 100%;
+  height: 100%;
+  fill: #00bea4;
+}

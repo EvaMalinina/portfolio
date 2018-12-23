@@ -7,14 +7,80 @@ block scripts
   script(src='about.bundle.js')
 
 block content
-  .about__triangles
-    svg(fill="#f8f9f5", viewbox="0 0 900 150", class="triangle", preserveAspectRatio="none")
-      polygon(points="0,0 0,150 900,150")
-    svg(fill="#f8f9f5", viewbox="0 0 900 150", class="triangle", preserveAspectRatio="none")
-      polygon(points="0,150 900,150 900,0")
-
-
-
-
-
   
+  .about__triangles
+    svg(fill="#efeee9", viewbox="0 0 900 150", class="triangle", preserveAspectRatio="none")
+      polygon(points="0,0 0,150 900,150")
+    svg(fill="#eeebdf", viewbox="0 0 900 150", class="triangle", preserveAspectRatio="none")
+      polygon(points="0,150 900,150 900,0")
+  .about__content
+    .about__col.about__col--bg-white
+      .about__left-title
+        h1.title About me
+         +icon('about_header', 'header__about')
+      .about__user-info
+        .user-info
+          .user-info__avatar
+            +image('myphoto.jpg', 'my-photo', 'myphoto')
+          .user-info__tite
+            h2.subtitle Who I am
+          .user-info__text.text-block
+            p I am a web developer from Kyiv, Ukraine. I'm 22. I am engaged in development of the modern websites and applications. 
+            |I like to do interesting and modern projects.
+            |This website I made within training at LoftSchool. A bit later I will refresh in it the content. 
+            |For now look how here all cool and beautifully!
+
+    .about__col.about__col--bg-beige
+      .about__right-title
+        h2.subtitle How I can be useful for you
+      .about__right-info
+        .about__desc-text.text-block
+          p Most of all I attract Frontend development, but I am also familiar and I can solve not complex problems on Backend.
+        .about__content
+          -
+            var skillCategories = [
+              {skillType: 'Frontend', skills:['HTML5', 'CSS3', 'JavaScript & jQuery']},
+              {skillType:'Backend' , skills:['PHP', 'mySQL', 'Node.js & npm', 'Mongo.db']},
+              {skillType: 'Workflow', skills:['Git', 'Gulp', 'Bower']}
+            ]
+          ul.skills
+            each skill in skillCategories
+              pre #{skill} 
+            
+        //-   each skill in skillCategories
+        //-     li.skills__item.skills-row
+        //-       .skills-row__title #{skill}
+        //-       ul.skills-row__list
+        //-         each item in skills.items
+        //-           li.skill-row__item
+        //-             .skill
+        //-               .skill__circles
+        //-                 svg.skill__cirle.skill__circle-under
+        //-                 svg.skill__cirle.skill__circle-above
+        //-               .skill__title #{item}
+  section.map
+    #map
+    .map__content
+      .contacts
+        .contacts__title
+          h2.subtitle Contacts
+        ul.contacts__list
+          li.contacts__item
+            .contact__icon
+              +icon('skype', 'contacts__marker')
+            .contact__title.text-block tetiana_dotsenko
+          li.contacts__item
+            .contact__icon
+              +icon('envelope', 'contacts__marker')
+            .contact__title.text-block userdotsenko@gmail.com
+          li.contacts__item
+            .contact__icon
+              +icon('phone', 'contacts__marker')
+            .contact__title.text-block +664595313
+          li.contacts__item
+            .contact__icon
+              +icon('map_marker', 'contacts__marker')
+            .contact__title.text-block Kyiv, Ukraine
+  
+  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAD-N55uT4bDIwV7xqmwUvUvmUgohgWcBE&callback=initMap' async defer)
+  script(src='./assets/about.js')
